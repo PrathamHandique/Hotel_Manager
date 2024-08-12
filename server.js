@@ -3,7 +3,7 @@ const app = express();
 const db = require("./db");
 //import dotenv
 require('dotenv').config();
-//import body-parser
+//import body-parser 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
