@@ -17,7 +17,6 @@ router.post("/", async (req, res) => {
     res.status(500).json({ err: "internal server error" });
   }
 });
-
 //*************************************************************************************************************/
 //Get Route to fetch all persons
 router.get("/", async (req, res) => {
@@ -30,7 +29,6 @@ router.get("/", async (req, res) => {
     res.status(500).json({ err: "internal server error" });
   }
 });
-
 //****************************************************************************************************************/
 //Get Route to fetch a person by work type
 router.get("/:workType", async (req, res) => {
@@ -52,7 +50,6 @@ router.get("/:workType", async (req, res) => {
     res.status(500).json({ err: "internal server error" });
   }
 });
-
 //***********************************************************************************************************************/
 //Get Route to update a person
 router.put("/:id", async (req, res) => {
@@ -73,7 +70,6 @@ router.put("/:id", async (req, res) => {
     res.status(500).json({ err: "internal server error" });
   }
 });
-
 //************************************************************************************************************************/
 //Get route to delete a person
 router.delete("/:id",async(req,res)=>{
